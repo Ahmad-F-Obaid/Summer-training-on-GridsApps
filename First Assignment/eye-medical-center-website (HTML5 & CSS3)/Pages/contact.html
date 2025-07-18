@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Eye Medical Center</title>
+    <meta name="description" content="Contact Eye Medical Center to schedule an appointment or get more information about our eye care services.">
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="Eye Medical Center Logo" class="logo-image">
+                    <div class="logo-text">
+                    <h1>Eye Medical Center</h1>
+                    <p class="tagline">Excellence in Eye Care</p>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown">
+                            <a href="services.html">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services.html#comprehensive-exams">Comprehensive Exams</a></li>
+                                <li><a href="services.html#surgery">Eye Surgery</a></li>
+                                <li><a href="services.html#pediatric">Pediatric Care</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="album.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contact">
+                    <p>Call Us: <a href="tel:+1234567890">(123) 456-7890</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team to schedule an appointment or ask questions about our services.</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-section">
+                        <h2>Send Us a Message</h2>
+                        <form class="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service of Interest</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="comprehensive-exam">Comprehensive Eye Exam</option>
+                                    <option value="cataract-surgery">Cataract Surgery</option>
+                                    <option value="lasik">LASIK Surgery</option>
+                                    <option value="pediatric">Pediatric Eye Care</option>
+                                    <option value="contact-lenses">Contact Lenses</option>
+                                    <option value="emergency">Emergency Care</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Please describe your inquiry or any specific concerns..."></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">I would like to receive updates about eye health and services</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <h2>Get in Touch</h2>
+                        <div class="contact-info">
+                            <div class="info-item">
+                                <h3>📍 Location</h3>
+                                <p>123 Medical Plaza, Suite 100<br>
+                                Healthcare City, HC 12345</p>
+                            </div>
+                            <div class="info-item">
+                                <h3>📞 Phone</h3>
+                                <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                            </div>
+                            <div class="info-item">
+                                <h3>✉️ Email</h3>
+                                <p><a href="mailto:info@eyemedicalcenter.com">info@eyemedicalcenter.com</a></p>
+                            </div>
+                            <div class="info-item">
+                                <h3>🕒 Hours</h3>
+                                <table class="hours-table">
+                                    <tr>
+                                        <td>Monday - Friday:</td>
+                                        <td>8:00 AM - 6:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday:</td>
+                                        <td>9:00 AM - 3:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday:</td>
+                                        <td>Closed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Emergency:</td>
+                                        <td>24/7 On-Call</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="emergency-info">
+                            <h3>Emergency Care</h3>
+                            <p>For urgent eye care needs outside of regular hours, please call our emergency line:</p>
+                            <p class="emergency-number"><a href="tel:+1234567899">(123) 456-7899</a></p>
+                        </div>
+
+                        <div class="insurance-info">
+                            <h3>Insurance Accepted</h3>
+                            <p>We accept most major insurance plans including:</p>
+                            <ul>
+                                <li>Medicare & Medicaid</li>
+                                <li>Blue Cross Blue Shield</li>
+                                <li>Aetna</li>
+                                <li>Cigna</li>
+                                <li>UnitedHealthcare</li>
+                                <li>VSP Vision Care</li>
+                                <li>EyeMed</li>
+                            </ul>
+                            <p>Please call to verify your specific coverage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Find Us</h2>
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <h3>Eye Medical Center</h3>
+                        <p>123 Medical Plaza, Suite 100<br>Healthcare City, HC 12345</p>
+                        <div class="directions">
+                            <h4>Directions:</h4>
+                            <ul>
+                                <li>From Highway 101: Take Exit 15 (Medical District)</li>
+                                <li>Turn right on Medical Plaza Drive</li>
+                                <li>Our building is on the left, Suite 100</li>
+                                <li>Free parking available in the rear lot</li>
+                            </ul>
+                        </div>
+                        <div class="nearby-landmarks">
+                            <h4>Nearby Landmarks:</h4>
+                            <ul>
+                                <li>Healthcare City Hospital (0.2 miles)</li>
+                                <li>Medical District Pharmacy (0.1 miles)</li>
+                                <li>City Medical Center (0.3 miles)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="appointment-cta">
+            <div class="container">
+                <h2>Ready to Schedule Your Appointment?</h2>
+                <p>Don't wait to take care of your vision. Our friendly staff is ready to help you schedule your visit.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+1234567890" class="btn btn-primary">Call Now</a>
+                    <a href="mailto:info@eyemedicalcenter.com" class="btn btn-secondary">Email Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eye Medical Center</h3>
+                    <p>Excellence in Eye Care</p>
+                    <div class="contact-info">
+                        <p>📍 123 Medical Plaza, Suite 100<br>Healthcare City, HC 12345</p>
+                        <p>📞 <a href="tel:+1234567890">(123) 456-7890</a></p>
+                        <p>✉️ <a href="mailto:info@eyemedicalcenter.com">info@eyemedicalcenter.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#comprehensive-exams">Eye Exams</a></li>
+                        <li><a href="services.html#surgery">Eye Surgery</a></li>
+                        <li><a href="services.html#pediatric">Pediatric Care</a></li>
+                        <li><a href="services.html#contacts">Contact Lenses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="return.html">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eye Medical Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

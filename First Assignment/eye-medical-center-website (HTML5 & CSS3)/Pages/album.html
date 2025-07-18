@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Eye Medical Center</title>
+    <meta name="description" content="Explore our state-of-the-art facilities and advanced equipment at Eye Medical Center.">
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="Eye Medical Center Logo" class="logo-image">
+                    <div class="logo-text">
+                    <h1>Eye Medical Center</h1>
+                    <p class="tagline">Excellence in Eye Care</p>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown">
+                            <a href="services.html">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services.html#comprehensive-exams">Comprehensive Exams</a></li>
+                                <li><a href="services.html#surgery">Eye Surgery</a></li>
+                                <li><a href="services.html#pediatric">Pediatric Care</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="album.html" class="active">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contact">
+                    <p>Call Us: <a href="tel:+1234567890">(123) 456-7890</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Photo Gallery</h1>
+                <p>Take a virtual tour of our state-of-the-art facilities and advanced medical equipment.</p>
+            </div>
+        </section>
+
+        <section class="gallery-navigation">
+            <div class="container">
+                <div class="gallery-tabs">
+                    <button class="tab-button active" data-category="all">All Photos</button>
+                    <button class="tab-button" data-category="facilities">Facilities</button>
+                    <button class="tab-button" data-category="equipment">Equipment</button>
+                    <button class="tab-button" data-category="surgery">Surgery Suites</button>
+                    <button class="tab-button" data-category="team">Our Team</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="photo-gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="facilities">
+                        <img src="../images/eye_clinic_1.jpg" alt="Modern reception area">
+                        <div class="gallery-overlay">
+                            <h3>Reception Area</h3>
+                            <p>Comfortable and welcoming reception area</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="equipment">
+                        <img src="../images/ophthalmology_1.jpg" alt="Advanced diagnostic equipment">
+                        <div class="gallery-overlay">
+                            <h3>Diagnostic Equipment</h3>
+                            <p>State-of-the-art diagnostic technology</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="facilities">
+                        <img src="../images/eye_clinic_2.jpg" alt="Examination room">
+                        <div class="gallery-overlay">
+                            <h3>Examination Room</h3>
+                            <p>Fully equipped examination rooms</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="equipment">
+                        <img src="../images/ophthalmology_2.png" alt="Eye examination equipment">
+                        <div class="gallery-overlay">
+                            <h3>Examination Equipment</h3>
+                            <p>Precision instruments for comprehensive exams</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="team">
+                        <img src="../images/eye_care_1.jpg" alt="Medical team">
+                        <div class="gallery-overlay">
+                            <h3>Our Medical Team</h3>
+                            <p>Experienced professionals providing care</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="surgery">
+                        <img src="../images/eye_care_2.jpeg" alt="Surgery suite">
+                        <div class="gallery-overlay">
+                            <h3>Surgery Suite</h3>
+                            <p>Advanced surgical facilities</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional placeholder gallery items -->
+                    <div class="gallery-item" data-category="facilities">
+                        <div class="placeholder-image">
+                            <span>Waiting Area</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Patient Waiting Area</h3>
+                            <p>Comfortable seating for patients and families</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="equipment">
+                        <div class="placeholder-image">
+                            <span>OCT Machine</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>OCT Imaging System</h3>
+                            <p>Optical coherence tomography for detailed retinal imaging</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="surgery">
+                        <div class="placeholder-image">
+                            <span>Laser Suite</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Laser Surgery Suite</h3>
+                            <p>Dedicated room for laser procedures</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="facilities">
+                        <div class="placeholder-image">
+                            <span>Recovery Room</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Post-Surgery Recovery</h3>
+                            <p>Comfortable recovery area for surgical patients</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="equipment">
+                        <div class="placeholder-image">
+                            <span>Surgical Microscope</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Surgical Microscope</h3>
+                            <p>High-precision microscope for delicate procedures</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="team">
+                        <div class="placeholder-image">
+                            <span>Consultation</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h3>Patient Consultation</h3>
+                            <p>Personalized care and treatment planning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="facility-features">
+            <div class="container">
+                <h2>Facility Highlights</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>🏥 Modern Facility</h3>
+                        <p>Our 10,000 square foot facility features the latest in medical design and patient comfort amenities.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>🔬 Advanced Technology</h3>
+                        <p>State-of-the-art diagnostic and surgical equipment ensures the highest quality care and outcomes.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>♿ Accessibility</h3>
+                        <p>Fully accessible facility with wheelchair access, accessible parking, and patient assistance services.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>🅿️ Convenient Parking</h3>
+                        <p>Free on-site parking with covered walkways and valet service available for surgical patients.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>🧼 Sterile Environment</h3>
+                        <p>Hospital-grade sterilization and infection control protocols ensure patient safety.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>👨‍👩‍👧‍👦 Family-Friendly</h3>
+                        <p>Comfortable waiting areas with amenities for families and children during appointments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipment-showcase">
+            <div class="container">
+                <h2>Advanced Equipment</h2>
+                <div class="equipment-list">
+                    <div class="equipment-category">
+                        <h3>Diagnostic Equipment</h3>
+                        <ul>
+                            <li>Optical Coherence Tomography (OCT)</li>
+                            <li>Fundus Photography Systems</li>
+                            <li>Visual Field Analyzers</li>
+                            <li>Corneal Topographers</li>
+                            <li>Ultrasound Biomicroscopy</li>
+                            <li>Fluorescein Angiography</li>
+                        </ul>
+                    </div>
+                    <div class="equipment-category">
+                        <h3>Surgical Equipment</h3>
+                        <ul>
+                            <li>Femtosecond Laser Systems</li>
+                            <li>Phacoemulsification Machines</li>
+                            <li>Vitrectomy Systems</li>
+                            <li>Excimer Laser for LASIK</li>
+                            <li>Surgical Microscopes</li>
+                            <li>Cryotherapy Units</li>
+                        </ul>
+                    </div>
+                    <div class="equipment-category">
+                        <h3>Specialized Tools</h3>
+                        <ul>
+                            <li>Contact Lens Fitting Sets</li>
+                            <li>Pediatric Examination Tools</li>
+                            <li>Low Vision Aids</li>
+                            <li>Emergency Care Equipment</li>
+                            <li>Optical Dispensing Systems</li>
+                            <li>Patient Education Materials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="virtual-tour-cta">
+            <div class="container">
+                <h2>Schedule a Personal Tour</h2>
+                <p>We'd love to show you our facilities in person. Schedule a tour to see our state-of-the-art equipment and meet our team.</p>
+                <div class="tour-options">
+                    <div class="tour-option">
+                        <h3>In-Person Tour</h3>
+                        <p>Visit our facility and see our equipment firsthand</p>
+                        <a href="contact.html" class="btn btn-primary">Schedule Tour</a>
+                    </div>
+                    <div class="tour-option">
+                        <h3>Virtual Consultation</h3>
+                        <p>Connect with our team via video call</p>
+                        <a href="contact.html" class="btn btn-secondary">Book Virtual Visit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Eye Medical Center</h3>
+                    <p>Excellence in Eye Care</p>
+                    <div class="contact-info">
+                        <p>📍 123 Medical Plaza, Suite 100<br>Healthcare City, HC 12345</p>
+                        <p>📞 <a href="tel:+1234567890">(123) 456-7890</a></p>
+                        <p>✉️ <a href="mailto:info@eyemedicalcenter.com">info@eyemedicalcenter.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#comprehensive-exams">Eye Exams</a></li>
+                        <li><a href="services.html#surgery">Eye Surgery</a></li>
+                        <li><a href="services.html#pediatric">Pediatric Care</a></li>
+                        <li><a href="services.html#contacts">Contact Lenses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="return.html">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eye Medical Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gallery filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active tab
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

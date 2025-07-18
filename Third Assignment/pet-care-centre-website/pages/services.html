@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - PetCare Centre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pet-blue': '#3B82F6',
+                        'pet-green': '#10B981',
+                        'pet-orange': '#F59E0B',
+                        'pet-purple': '#8B5CF6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-pet-blue">🐾 PetCare Centre</h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/Third Assignment/index.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">About</a>
+                        <a href="services.html" class="text-pet-blue bg-blue-100 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
+                        <a href="gallery.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Gallery</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-pet-blue focus:outline-none focus:text-pet-blue" aria-label="Toggle mobile menu">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="/Third Assignment/index.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="services.html" class="text-pet-blue bg-blue-100 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="gallery.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="contact.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="mt-16 bg-gradient-to-r from-pet-orange to-pet-purple text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Our Services</h1>
+                <p class="text-xl text-orange-100 max-w-3xl mx-auto">
+                    Comprehensive pet care services designed to keep your furry friends healthy, happy, and thriving throughout their lives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Health Checkups -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-pet-blue">
+                    <div class="text-5xl mb-6 text-pet-blue">🩺</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Health Checkups</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive health examinations to detect issues early and maintain your pet's optimal health.</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-center"><span class="text-pet-blue mr-2">✓</span> Physical examination</li>
+                        <li class="flex items-center"><span class="text-pet-blue mr-2">✓</span> Blood tests & diagnostics</li>
+                        <li class="flex items-center"><span class="text-pet-blue mr-2">✓</span> Dental health assessment</li>
+                        <li class="flex items-center"><span class="text-pet-blue mr-2">✓</span> Nutritional counseling</li>
+                    </ul>
+                    <div class="border-t pt-4">
+                        <p class="text-sm text-gray-500">Starting from <span class="font-semibold text-pet-blue">$75</span></p>
+                    </div>
+                </div>
+
+                <!-- Service 2: Vaccinations -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-pet-green">
+                    <div class="text-5xl mb-6 text-pet-green">💉</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Vaccinations</h3>
+                    <p class="text-gray-600 mb-6">Essential vaccination programs to protect your pet from common diseases and infections.</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-center"><span class="text-pet-green mr-2">✓</span> Core vaccinations</li>
+                        <li class="flex items-center"><span class="text-pet-green mr-2">✓</span> Non-core vaccinations</li>
+                        <li class="flex items-center"><span class="text-pet-green mr-2">✓</span> Rabies vaccination</li>
+                        <li class="flex items-center"><span class="text-pet-green mr-2">✓</span> Vaccination schedules</li>
+                    </ul>
+                    <div class="border-t pt-4">
+                        <p class="text-sm text-gray-500">Starting from <span class="font-semibold text-pet-green">$45</span></p>
+                    </div>
+                </div>
+
+                <!-- Service 3: Emergency Care -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-red-500">
+                    <div class="text-5xl mb-6 text-red-500">🚨</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Emergency Care</h3>
+                    <p class="text-gray-600 mb-6">24/7 emergency services for urgent pet health situations and critical care needs.</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> 24/7 availability</li>
+                        <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Emergency surgery</li>
+                        <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Critical care monitoring</li>
+                        <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Poison control support</li>
+                    </ul>
+                    <div class="border-t pt-4">
+                        <p class="text-sm text-gray-500">Emergency consultation <span class="font-semibold text-red-500">$150</span></p>
+                    </div>
+                </div>
+
+                <!-- Service 4: Pet Grooming -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-pet-orange">
+                    <div class="text-5xl mb-6 text-pet-orange">🛁</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Pet Grooming</h3>
+                    <p class="text-gray-600 mb-6">Professional grooming services to keep your pet clean, healthy, and looking their best.</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-center"><span class="text-pet-orange mr-2">✓</span> Full service bath & dry</li>
+                        <li class="flex items-center"><span class="text-pet-orange mr-2">✓</span> Hair cutting & styling</li>
+                        <li class="flex items-center"><span class="text-pet-orange mr-2">✓</span> Nail trimming</li>
+                        <li class="flex items-center"><span class="text-pet-orange mr-2">✓</span> Ear cleaning</li>
+                    </ul>
+                    <div class="border-t pt-4">
+                        <p class="text-sm text-gray-500">Starting from <span class="font-semibold text-pet-orange">$60</span></p>
+                    </div>
+                </div>
+
+                <!-- Service 5: Pet Boarding -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-pet-purple">
+                    <div class="text-5xl mb-6 text-pet-purple">🏠</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Pet Boarding</h3>
+                    <p class="text-gray-600 mb-6">Safe, comfortable boarding facilities with supervised care when you're away from home.</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-center"><span class="text-pet-purple mr-2">✓</span> Climate-controlled rooms</li>
+                        <li class="flex items-center"><span class="text-pet-purple mr-2">✓</span> Daily exercise & play</li>
+                        <li class="flex items-center"><span class="text-pet-purple mr-2">✓</span> Feeding & medication</li>
+                        <li class="flex items-center"><span class="text-pet-purple mr-2">✓</span> 24/7 supervision</li>
+                    </ul>
+                    <div class="border-t pt-4">
+                        <p class="text-sm text-gray-500">Per night <span class="font-semibold text-pet-purple">$35</span></p>
+                    </div>
+                </div>
+
+                <!-- Service 6: Dental Care -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-teal-500">
+                    <div class="text-5xl mb-6 text-teal-500">🦷</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Dental Care</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive dental health services to maintain your pet's oral hygiene and prevent disease.</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-center"><span class="text-teal-500 mr-2">✓</span> Professional cleaning</li>
+                        <li class="flex items-center"><span class="text-teal-500 mr-2">✓</span> Dental X-rays</li>
+                        <li class="flex items-center"><span class="text-teal-500 mr-2">✓</span> Tooth extractions</li>
+                        <li class="flex items-center"><span class="text-teal-500 mr-2">✓</span> Oral health education</li>
+                    </ul>
+                    <div class="border-t pt-4">
+                        <p class="text-sm text-gray-500">Starting from <span class="font-semibold text-teal-500">$200</span></p>
+                    </div>
+                </div>
+
+                <!-- Service 7: Surgery -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-indigo-500">
+                    <div class="text-5xl mb-6 text-indigo-500">⚕️</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Surgery</h3>
+                    <p class="text-gray-600 mb-6">Advanced surgical procedures performed by experienced veterinary surgeons in our modern facility.</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-center"><span class="text-indigo-500 mr-2">✓</span> Spay/neuter procedures</li>
+                        <li class="flex items-center"><span class="text-indigo-500 mr-2">✓</span> Soft tissue surgery</li>
+                        <li class="flex items-center"><span class="text-indigo-500 mr-2">✓</span> Orthopedic surgery</li>
+                        <li class="flex items-center"><span class="text-indigo-500 mr-2">✓</span> Post-surgical care</li>
+                    </ul>
+                    <div class="border-t pt-4">
+                        <p class="text-sm text-gray-500">Consultation required for <span class="font-semibold text-indigo-500">pricing</span></p>
+                    </div>
+                </div>
+
+                <!-- Service 8: Nutritional Counseling -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-green-500">
+                    <div class="text-5xl mb-6 text-green-500">🥗</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Nutritional Counseling</h3>
+                    <p class="text-gray-600 mb-6">Expert advice on pet nutrition to ensure your pet maintains a healthy weight and lifestyle.</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Diet planning</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Weight management</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Special dietary needs</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Supplement recommendations</li>
+                    </ul>
+                    <div class="border-t pt-4">
+                        <p class="text-sm text-gray-500">Consultation <span class="font-semibold text-green-500">$50</span></p>
+                    </div>
+                </div>
+
+                <!-- Service 9: Behavioral Training -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-pink-500">
+                    <div class="text-5xl mb-6 text-pink-500">🎓</div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Behavioral Training</h3>
+                    <p class="text-gray-600 mb-6">Professional training services to help your pet develop good behavior and social skills.</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li class="flex items-center"><span class="text-pink-500 mr-2">✓</span> Basic obedience training</li>
+                        <li class="flex items-center"><span class="text-pink-500 mr-2">✓</span> Behavioral modification</li>
+                        <li class="flex items-center"><span class="text-pink-500 mr-2">✓</span> Socialization classes</li>
+                        <li class="flex items-center"><span class="text-pink-500 mr-2">✓</span> Problem solving</li>
+                    </ul>
+                    <div class="border-t pt-4">
+                        <p class="text-sm text-gray-500">Per session <span class="font-semibold text-pink-500">$80</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Packages Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Service Packages</h2>
+                <p class="text-xl text-gray-600">Save more with our comprehensive care packages</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Package -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 relative">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Basic Care</h3>
+                        <div class="text-4xl font-bold text-pet-blue mb-4">$199</div>
+                        <p class="text-gray-600">Perfect for basic health maintenance</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-pet-blue mr-2">✓</span> Annual health checkup</li>
+                        <li class="flex items-center"><span class="text-pet-blue mr-2">✓</span> Core vaccinations</li>
+                        <li class="flex items-center"><span class="text-pet-blue mr-2">✓</span> Basic grooming</li>
+                        <li class="flex items-center"><span class="text-pet-blue mr-2">✓</span> Nail trimming</li>
+                    </ul>
+                    <button class="w-full bg-pet-blue text-white py-3 rounded-lg font-semibold hover:bg-pet-blue/90 transition-colors duration-300">
+                        Choose Basic
+                    </button>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 relative border-2 border-pet-green">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-pet-green text-white px-4 py-1 rounded-full text-sm font-semibold">
+                        Most Popular
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium Care</h3>
+                        <div class="text-4xl font-bold text-pet-green mb-4">$399</div>
+                        <p class="text-gray-600">Comprehensive care for active pets</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-pet-green mr-2">✓</span> Bi-annual health checkups</li>
+                        <li class="flex items-center"><span class="text-pet-green mr-2">✓</span> All vaccinations</li>
+                        <li class="flex items-center"><span class="text-pet-green mr-2">✓</span> Professional grooming</li>
+                        <li class="flex items-center"><span class="text-pet-green mr-2">✓</span> Dental cleaning</li>
+                        <li class="flex items-center"><span class="text-pet-green mr-2">✓</span> Emergency care discount</li>
+                    </ul>
+                    <button class="w-full bg-pet-green text-white py-3 rounded-lg font-semibold hover:bg-pet-green/90 transition-colors duration-300">
+                        Choose Premium
+                    </button>
+                </div>
+
+                <!-- Deluxe Package -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 relative">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Deluxe Care</h3>
+                        <div class="text-4xl font-bold text-pet-purple mb-4">$699</div>
+                        <p class="text-gray-600">Ultimate care for your beloved pet</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="text-pet-purple mr-2">✓</span> Quarterly health checkups</li>
+                        <li class="flex items-center"><span class="text-pet-purple mr-2">✓</span> All vaccinations</li>
+                        <li class="flex items-center"><span class="text-pet-purple mr-2">✓</span> Premium grooming</li>
+                        <li class="flex items-center"><span class="text-pet-purple mr-2">✓</span> Dental care</li>
+                        <li class="flex items-center"><span class="text-pet-purple mr-2">✓</span> Behavioral training</li>
+                        <li class="flex items-center"><span class="text-pet-purple mr-2">✓</span> Nutritional counseling</li>
+                    </ul>
+                    <button class="w-full bg-pet-purple text-white py-3 rounded-lg font-semibold hover:bg-pet-purple/90 transition-colors duration-300">
+                        Choose Deluxe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-pet-blue to-pet-purple text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Book Your Pet's Appointment?</h2>
+            <p class="text-xl mb-8 text-blue-100">Contact us today to schedule a consultation or learn more about our services.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-pet-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+                    Schedule Appointment
+                </a>
+                <a href="tel:+1234567890" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-pet-blue transition-colors duration-300">
+                    Call Now: (123) 456-7890
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">🐾 PetCare Centre</h3>
+                    <p class="text-gray-400 mb-4">Professional pet care services with compassion and expertise.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">📘</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">📷</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">🐦</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/Third Assignment/index.html" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition-colors duration-300">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Health Checkups</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Vaccinations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Pet Grooming</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Emergency Care</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Pet Boarding</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>📍 123 Pet Care Street, City, State 12345</li>
+                        <li>📞 (123) 456-7890</li>
+                        <li>✉️ info@petcarecentre.com</li>
+                        <li>🕒 Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 PetCare Centre. All rights reserved. | Professional Pet Care Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Package selection animation
+        const packageCards = document.querySelectorAll('.bg-white');
+        packageCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

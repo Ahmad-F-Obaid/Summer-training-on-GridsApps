@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Eye Medical Center</title>
+    <meta name="description" content="Learn about Eye Medical Center's mission, vision, and commitment to providing exceptional eye care services.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <!-- Bootstrap Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/logo.png" alt="Eye Medical Center Logo" width="50" height="50" class="me-3">
+                <div>
+                    <h5 class="mb-0 text-primary">Eye Medical Center</h5>
+                    <small class="text-muted">Excellence in Eye Care</small>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" 
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html#comprehensive-exams">
+                                <i class="bi bi-eye me-2"></i>Comprehensive Exams</a></li>
+                            <li><a class="dropdown-item" href="services.html#surgery">
+                                <i class="bi bi-scissors me-2"></i>Eye Surgery</a></li>
+                            <li><a class="dropdown-item" href="services.html#pediatric">
+                                <i class="bi bi-person-hearts me-2"></i>Pediatric Care</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="services.html">
+                                <i class="bi bi-list-ul me-2"></i>All Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="album.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="tel:+1234567890" class="btn btn-outline-primary">
+                    <i class="bi bi-telephone me-1"></i>(123) 456-7890
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Hero Section -->
+        <section class="page-hero bg-primary text-white py-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                        <h1 class="display-4 fw-bold mb-3">About Eye Medical Center</h1>
+                        <p class="lead">Dedicated to preserving and improving your vision with compassionate, comprehensive care for over 20 years.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="about-story py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <h2 class="display-5 fw-bold mb-4">Our Story</h2>
+                        <p class="mb-3">Founded in 2003, Eye Medical Center has been at the forefront of eye care innovation for over two decades. What started as a small practice with a vision to provide exceptional eye care has grown into a comprehensive medical center serving thousands of patients annually.</p>
+                        <p class="mb-4">Our journey began with Dr. Sarah Mitchell, a board-certified ophthalmologist who recognized the need for advanced eye care services in our community. Today, we continue to honor that founding vision while embracing the latest technological advances in ophthalmology.</p>
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                <span>Founded in 2003</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                <span>Board Certified Doctors</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                <span>State-of-the-art Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="position-relative">
+                            <img src="../images/eye_clinic_1.jpg" alt="Eye Medical Center facility" class="img-fluid rounded shadow">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Vision Section -->
+        <section class="mission-vision py-5 bg-light">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-5">
+                                <div class="text-center mb-4">
+                                    <i class="bi bi-bullseye text-primary service-icon-large"></i>
+                                </div>
+                                <h3 class="card-title text-center mb-4">Our Mission</h3>
+                                <p class="card-text">To provide exceptional, comprehensive eye care services using state-of-the-art technology and evidence-based treatments, while maintaining the highest standards of patient care and safety. We are committed to preserving and improving our patients' vision and overall quality of life.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-5">
+                                <div class="text-center mb-4">
+                                    <i class="bi bi-eye text-primary service-icon-large"></i>
+                                </div>
+                                <h3 class="card-title text-center mb-4">Our Vision</h3>
+                                <p class="card-text">To be the leading eye care center in the region, recognized for our clinical excellence, innovative treatments, and compassionate patient care. We strive to set the standard for comprehensive eye health services and to be the trusted choice for patients and referring physicians.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="values py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold mb-3">Our Core Values</h2>
+                        <p class="lead text-muted">The principles that guide everything we do</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-center">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 testimonial-avatar">
+                                <i class="bi bi-award fs-2"></i>
+                            </div>
+                            <h4>Excellence</h4>
+                            <p class="text-muted">We maintain the highest standards in everything we do, from patient care to clinical outcomes.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-center">
+                            <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 testimonial-avatar">
+                                <i class="bi bi-heart fs-2"></i>
+                            </div>
+                            <h4>Compassion</h4>
+                            <p class="text-muted">We treat every patient with empathy, respect, and understanding throughout their care journey.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-center">
+                            <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 testimonial-avatar">
+                                <i class="bi bi-lightbulb fs-2"></i>
+                            </div>
+                            <h4>Innovation</h4>
+                            <p class="text-muted">We embrace cutting-edge technology and techniques to provide the most advanced treatments available.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="text-center">
+                            <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 testimonial-avatar">
+                                <i class="bi bi-shield-check fs-2"></i>
+                            </div>
+                            <h4>Integrity</h4>
+                            <p class="text-muted">We conduct ourselves with honesty, transparency, and ethical practices in all our interactions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold mb-3">Our Achievements</h2>
+                        <p class="lead">Numbers that speak to our commitment to excellence</p>
+                    </div>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="achievement-item">
+                            <div class="achievement-number display-3 fw-bold mb-2">20+</div>
+                            <div class="achievement-text fs-5">Years of Excellence</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="achievement-item">
+                            <div class="achievement-number display-3 fw-bold mb-2">15K+</div>
+                            <div class="achievement-text fs-5">Patients Served</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="achievement-item">
+                            <div class="achievement-number display-3 fw-bold mb-2">5K+</div>
+                            <div class="achievement-text fs-5">Successful Surgeries</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="achievement-item">
+                            <div class="achievement-number display-3 fw-bold mb-2">98%</div>
+                            <div class="achievement-text fs-5">Patient Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section class="technology py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <h2 class="display-5 fw-bold mb-4">Advanced Technology</h2>
+                        <p class="mb-4">At Eye Medical Center, we invest in the latest diagnostic and treatment technologies to ensure our patients receive the most advanced care available. Our state-of-the-art equipment includes:</p>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                    <span>Advanced OCT (Optical Coherence Tomography) imaging systems</span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                    <span>Femtosecond laser technology for precision surgery</span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                    <span>Digital retinal photography and fluorescein angiography</span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                    <span>Automated perimetry for visual field testing</span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                    <span>Corneal topography and pachymetry systems</span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-3"></i>
+                                    <span>Premium intraocular lenses for cataract surgery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="position-relative">
+                            <img src="../images/ophthalmology_2.png" alt="Advanced eye examination equipment" class="img-fluid rounded shadow">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accreditations Section -->
+        <section class="accreditations py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold mb-3">Accreditations & Certifications</h2>
+                        <p class="lead text-muted">Recognition of our commitment to quality and safety</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4 text-center">
+                                <i class="bi bi-award-fill text-primary mb-3 service-icon-large"></i>
+                                <h5 class="card-title">Joint Commission Accredited</h5>
+                                <p class="card-text text-muted">Our surgical center meets the highest standards for patient safety and quality care.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4 text-center">
+                                <i class="bi bi-person-badge-fill text-success mb-3 service-icon-large"></i>
+                                <h5 class="card-title">Board Certified Physicians</h5>
+                                <p class="card-text text-muted">All our ophthalmologists are board-certified by the American Board of Ophthalmology.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4 text-center">
+                                <i class="bi bi-shield-fill-check text-info mb-3 service-icon-large"></i>
+                                <h5 class="card-title">Medicare Certified</h5>
+                                <p class="card-text text-muted">We are certified to provide services to Medicare beneficiaries.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4 text-center">
+                                <i class="bi bi-lock-fill text-warning mb-3 service-icon-large"></i>
+                                <h5 class="card-title">HIPAA Compliant</h5>
+                                <p class="card-text text-muted">We maintain strict privacy and security standards for all patient information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold mb-3">Ready to Experience Excellence?</h2>
+                        <p class="lead mb-4">Schedule your appointment today and discover why thousands of patients trust us with their vision care.</p>
+                        <a href="contact.html" class="btn btn-light btn-lg px-5">
+                            <i class="bi bi-calendar-check me-2"></i>Schedule Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="../images/logo.png" alt="Eye Medical Center Logo" width="40" height="40" class="me-3">
+                        <div>
+                            <h5 class="mb-0">Eye Medical Center</h5>
+                            <small class="text-muted">Excellence in Eye Care</small>
+                        </div>
+                    </div>
+                    <p class="text-muted mb-3">Providing exceptional eye care services to our community for over 20 years with cutting-edge technology and compassionate care.</p>
+                    <div class="contact-info">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+                            <span>123 Medical Plaza, Suite 100<br>Healthcare City, HC 12345</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                            <a href="tel:+1234567890" class="text-light text-decoration-none">(123) 456-7890</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                            <a href="mailto:info@eyemedicalcenter.com" class="text-light text-decoration-none">info@eyemedicalcenter.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="team.html" class="text-muted text-decoration-none">Our Team</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#comprehensive-exams" class="text-muted text-decoration-none">Eye Exams</a></li>
+                        <li class="mb-2"><a href="services.html#surgery" class="text-muted text-decoration-none">Eye Surgery</a></li>
+                        <li class="mb-2"><a href="services.html#pediatric" class="text-muted text-decoration-none">Pediatric Care</a></li>
+                        <li class="mb-2"><a href="services.html#contacts" class="text-muted text-decoration-none">Contact Lenses</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="privacy.html" class="text-muted text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="terms.html" class="text-muted text-decoration-none">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="return.html" class="text-muted text-decoration-none">Return Policy</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-muted text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2025 Eye Medical Center. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-muted me-3" data-bs-toggle="tooltip" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-muted me-3" data-bs-toggle="tooltip" title="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-muted me-3" data-bs-toggle="tooltip" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-muted" data-bs-toggle="tooltip" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top" title="Back to top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Back to top button
+        let mybutton = document.getElementById("btn-back-to-top");
+        
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        mybutton.addEventListener("click", function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

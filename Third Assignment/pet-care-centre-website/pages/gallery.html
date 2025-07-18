@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - PetCare Centre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pet-blue': '#3B82F6',
+                        'pet-green': '#10B981',
+                        'pet-orange': '#F59E0B',
+                        'pet-purple': '#8B5CF6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-pet-blue">🐾 PetCare Centre</h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/Third Assignment/index.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
+                        <a href="about.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">About</a>
+                        <a href="services.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
+                        <a href="gallery.html" class="text-pet-blue bg-blue-100 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Gallery</a>
+                        <a href="contact.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-pet-blue focus:outline-none focus:text-pet-blue" aria-label="Toggle mobile menu">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="/Third Assignment/index.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="services.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="gallery.html" class="text-pet-blue bg-blue-100 block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="contact.html" class="text-gray-700 hover:text-pet-blue hover:bg-blue-50 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="mt-16 bg-gradient-to-r from-pet-purple to-pet-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Our Gallery</h1>
+                <p class="text-xl text-purple-100 max-w-3xl mx-auto">
+                    Take a look at our modern facilities, happy pets, and the caring moments that make PetCare Centre special.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="gallery-filter active px-6 py-2 rounded-full bg-pet-blue text-white font-semibold hover:bg-pet-blue/90 transition-colors duration-300" data-filter="all">
+                    All Photos
+                </button>
+                <button class="gallery-filter px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-gray-300 transition-colors duration-300" data-filter="facilities">
+                    Facilities
+                </button>
+                <button class="gallery-filter px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-gray-300 transition-colors duration-300" data-filter="pets">
+                    Happy Pets
+                </button>
+                <button class="gallery-filter px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-gray-300 transition-colors duration-300" data-filter="care">
+                    Care Services
+                </button>
+                <button class="gallery-filter px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-gray-300 transition-colors duration-300" data-filter="team">
+                    Our Team
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                
+                <!-- Facility Images -->
+                <div class="gallery-item facilities group cursor-pointer">
+                    <div class="bg-gradient-to-br from-pet-blue/20 to-pet-purple/20 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🏥</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Modern Clinic</h3>
+                            <p class="text-gray-600">State-of-the-art medical facility</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Happy Pets -->
+                <div class="gallery-item pets group cursor-pointer">
+                    <div class="bg-gradient-to-br from-pet-green/20 to-pet-blue/20 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🐕</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Happy Golden Retriever</h3>
+                            <p class="text-gray-600">After successful treatment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Care Services -->
+                <div class="gallery-item care group cursor-pointer">
+                    <div class="bg-gradient-to-br from-pet-orange/20 to-pet-green/20 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">💉</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Vaccination Process</h3>
+                            <p class="text-gray-600">Professional care administration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member -->
+                <div class="gallery-item team group cursor-pointer">
+                    <div class="bg-gradient-to-br from-pet-purple/20 to-pet-orange/20 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">👩‍⚕️</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Dr. Sarah at Work</h3>
+                            <p class="text-gray-600">Caring for our patients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facility - Surgery Room -->
+                <div class="gallery-item facilities group cursor-pointer">
+                    <div class="bg-gradient-to-br from-teal-200 to-pet-blue/20 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">⚕️</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Surgery Room</h3>
+                            <p class="text-gray-600">Sterile operating environment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Happy Pet - Cat -->
+                <div class="gallery-item pets group cursor-pointer">
+                    <div class="bg-gradient-to-br from-pink-200 to-pet-purple/20 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🐱</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Rescued Kitten</h3>
+                            <p class="text-gray-600">Now healthy and playful</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grooming Service -->
+                <div class="gallery-item care group cursor-pointer">
+                    <div class="bg-gradient-to-br from-pet-orange/20 to-yellow-200 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🛁</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Grooming Session</h3>
+                            <p class="text-gray-600">Professional pet grooming</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team - Veterinary Tech -->
+                <div class="gallery-item team group cursor-pointer">
+                    <div class="bg-gradient-to-br from-pet-green/20 to-teal-200 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">👨‍⚕️</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Dr. Michael Chen</h3>
+                            <p class="text-gray-600">Emergency care specialist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boarding Facilities -->
+                <div class="gallery-item facilities group cursor-pointer">
+                    <div class="bg-gradient-to-br from-pet-purple/20 to-indigo-200 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🏠</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Boarding Suites</h3>
+                            <p class="text-gray-600">Comfortable overnight stays</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Happy Pet - Parrot -->
+                <div class="gallery-item pets group cursor-pointer">
+                    <div class="bg-gradient-to-br from-green-200 to-pet-green/20 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🦜</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Colorful Parrot</h3>
+                            <p class="text-gray-600">Exotic pet care specialist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dental Care -->
+                <div class="gallery-item care group cursor-pointer">
+                    <div class="bg-gradient-to-br from-blue-200 to-pet-blue/20 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🦷</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Dental Care</h3>
+                            <p class="text-gray-600">Professional dental cleaning</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team - Groomer -->
+                <div class="gallery-item team group cursor-pointer">
+                    <div class="bg-gradient-to-br from-pet-orange/20 to-red-200 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">👩‍💼</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Emma Johnson</h3>
+                            <p class="text-gray-600">Professional groomer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Gallery Items -->
+                <div class="gallery-item pets group cursor-pointer">
+                    <div class="bg-gradient-to-br from-purple-200 to-pet-purple/20 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🐰</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Rescued Rabbit</h3>
+                            <p class="text-gray-600">Small animal specialist care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item facilities group cursor-pointer">
+                    <div class="bg-gradient-to-br from-yellow-200 to-pet-orange/20 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🎯</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Training Area</h3>
+                            <p class="text-gray-600">Behavioral training space</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item care group cursor-pointer">
+                    <div class="bg-gradient-to-br from-indigo-200 to-pet-blue/20 rounded-xl p-8 h-64 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🩺</div>
+                            <h3 class="text-xl font-semibold text-gray-800">Health Checkup</h3>
+                            <p class="text-gray-600">Comprehensive examination</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-75 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-4xl max-h-full overflow-hidden">
+            <div class="p-4 border-b flex justify-between items-center">
+                <h3 id="modalTitle" class="text-xl font-bold text-gray-900"></h3>
+                <button id="closeModal" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+            </div>
+            <div class="p-6 text-center">
+                <div id="modalContent" class="text-8xl mb-4"></div>
+                <p id="modalDescription" class="text-gray-600"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Happy Moments</h2>
+                <p class="text-xl text-gray-600">Every photo tells a story of care, healing, and happiness</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Stat 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-pet-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-pet-blue">📸</span>
+                    </div>
+                    <div class="text-3xl font-bold text-pet-blue mb-2">1000+</div>
+                    <p class="text-gray-600">Happy Moments Captured</p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-pet-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-pet-green">🐾</span>
+                    </div>
+                    <div class="text-3xl font-bold text-pet-green mb-2">10,000+</div>
+                    <p class="text-gray-600">Pets Treated</p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-pet-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-pet-orange">😊</span>
+                    </div>
+                    <div class="text-3xl font-bold text-pet-orange mb-2">5,000+</div>
+                    <p class="text-gray-600">Happy Families</p>
+                </div>
+
+                <!-- Stat 4 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-pet-purple/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl text-pet-purple">⭐</span>
+                    </div>
+                    <div class="text-3xl font-bold text-pet-purple mb-2">4.9/5</div>
+                    <p class="text-gray-600">Average Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-pet-green to-pet-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Want to Share Your Pet's Story?</h2>
+            <p class="text-xl mb-8 text-green-100">We'd love to feature your pet's journey and add to our collection of happy moments.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-pet-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+                    Share Your Story
+                </a>
+                <a href="services.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-pet-blue transition-colors duration-300">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">🐾 PetCare Centre</h3>
+                    <p class="text-gray-400 mb-4">Professional pet care services with compassion and expertise.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">📘</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">📷</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">🐦</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/Third Assignment/index.html" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition-colors duration-300">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-300">Health Checkups</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-300">Vaccinations</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-300">Pet Grooming</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-300">Emergency Care</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors duration-300">Pet Boarding</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>📍 123 Pet Care Street, City, State 12345</li>
+                        <li>📞 (123) 456-7890</li>
+                        <li>✉️ info@petcarecentre.com</li>
+                        <li>🕒 Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 PetCare Centre. All rights reserved. | Professional Pet Care Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Gallery filtering
+        const filterButtons = document.querySelectorAll('.gallery-filter');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-pet-blue', 'text-white');
+                    btn.classList.add('bg-gray-200', 'text-gray-700');
+                });
+                
+                button.classList.add('active', 'bg-pet-blue', 'text-white');
+                button.classList.remove('bg-gray-200', 'text-gray-700');
+                
+                // Filter gallery items
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                        item.style.opacity = '1';
+                    } else {
+                        item.style.display = 'none';
+                        item.style.opacity = '0';
+                    }
+                });
+            });
+        });
+
+        // Modal functionality
+        const modal = document.getElementById('imageModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalContent = document.getElementById('modalContent');
+        const modalDescription = document.getElementById('modalDescription');
+        const closeModal = document.getElementById('closeModal');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const title = item.querySelector('h3').textContent;
+                const description = item.querySelector('p').textContent;
+                const emoji = item.querySelector('div div').textContent;
+                
+                modalTitle.textContent = title;
+                modalContent.textContent = emoji;
+                modalDescription.textContent = description;
+                
+                modal.classList.remove('hidden');
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        // Close modal when clicking outside
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                modal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
